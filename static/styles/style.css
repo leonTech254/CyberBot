@@ -11,7 +11,7 @@ header nav {
 }
 .chat-container
 {
-    width: 70%;
+    width: 50%;
     min-height: 20rem;
     background-color: #ccc;
     margin: auto;
@@ -67,6 +67,7 @@ border-radius: 8px 8px 0px 8px;
 color: #fff;
 margin-right: auto;
 float: right;
+margin-bottom: .5rem;
 
 
 }

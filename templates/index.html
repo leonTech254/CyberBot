@@ -14,7 +14,6 @@
     <div class="chat-container">
         <div class="bubble-container" id="appendChat">
             <span class="chatBubble">
-                hello
             </span>
 
         </div>
@@ -32,8 +31,12 @@
 
     <script>
         $(document).ready(function(){
+            let welcome="Hi there! Ask me something about the cyber security."
+            let botResponse= `<div class='me'><span class='chatBubble-bot'>${welcome}<br></span></div>`;
+           $("#appendChat").append(botResponse);
         function getUserResquery()
         {
+            
             // $.get("/chat/")
             inputUser=$("#userInput").val();
            let userInput= `<div><span class='chatBubble-user'>${inputUser}<br></span></div>`;

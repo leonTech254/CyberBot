@@ -15,11 +15,8 @@ X_train = patterns
 y_train = [intent["tag"] for intent in intents for _ in intent["patterns"]]
 model = make_pipeline(CountVectorizer(), MultinomialNB())
 model.fit(X_train, y_train)
-
-
 def get_intent(message):
     return model.predict([message])[0]
-
 class Model:
     def respond(message):
         intent = get_intent(message)
@@ -35,7 +32,7 @@ class Model:
 
 
 
-# print("Bot: Hi there! Ask me something about the college.")
+# print("Bot: Hi there! Ask me something about the cyber security.")
 # while True:
 #     user_input = input("You: ")
 #     print("Bot:", respond(user_input))
