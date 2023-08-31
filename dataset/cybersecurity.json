@@ -1,0 +1,266 @@
+{
+"intents": [
+    {
+        "tag": "greeting",
+        "patterns": ["Hi", "Hello", "Hey", "Hiya", "Hey there", "Greetings", "Yo"],
+        "responses": [
+            "Hello!", 
+            "Hi there!", 
+            "Greetings! How can I assist you with cyber security?",
+            "Hey, how can I help you today?",
+            "Hiya! Ready to talk about cyber security?",
+            "Hello! Feel free to ask me anything about cyber security.",
+            "Hey there! Welcome to the cyber security chat. What can I do for you?"
+        ]
+        },
+        {
+            "tag": "phishing",
+            "patterns": [
+              "What is phishing?", 
+              "How to prevent phishing?", 
+              "Examples of phishing attacks",
+              "Tell me about phishing", 
+              "What are phishing attacks?", 
+              "How can I protect against phishing?",
+              "Give me tips for avoiding phishing",
+              "What are common phishing techniques?"
+            ],
+            "responses": [
+              "Phishing is a fraudulent attempt to obtain sensitive information.", 
+              "To prevent phishing, avoid clicking on suspicious links.", 
+              "Phishing examples include fake emails from banks requesting login information.",
+              "Phishing attacks involve tricking individuals into revealing sensitive data.",
+              "Preventing phishing involves being cautious of unexpected emails asking for personal info.",
+              "Sure! Protect against phishing by verifying sender addresses and not sharing personal info online.",
+              "Avoid phishing by double-checking URLs and not downloading attachments from unknown sources.",
+              "Common phishing techniques include spear phishing, baiting, and pretexting."
+            ]
+          },          
+          {
+            "tag": "malware",
+            "patterns": [
+              "What is malware?", 
+              "Types of malware", 
+              "How to protect against malware?",
+              "Tell me about malware",
+              "Define malware",
+              "List some common types of malware",
+              "Give me tips to safeguard my system from malware"
+            ],
+            "responses": [
+              "Malware is malicious software designed to harm your computer.", 
+              "Types of malware include viruses, worms, Trojans, ransomware, and spyware.", 
+              "To protect against malware, use antivirus software and keep your software updated.",
+              "Sure! Malware is any software created to cause damage, steal data, or gain unauthorized access.",
+              "Certainly! Common types of malware are adware, keyloggers, and rootkits, aside from viruses and worms.",
+              "Definitely! Safeguarding your system involves regular scans, downloading from trusted sources, and being cautious with email attachments.",
+              "Certainly! Malware refers to software intended to damage or gain unauthorized access to systems.",
+              "Certainly! Protect against malware by avoiding suspicious downloads and keeping your firewall active."
+            ]
+          },
+          
+          {
+            "tag": "password_security",
+            "patterns": [
+              "How to create a strong password?", 
+              "Importance of password security", 
+              "Should I use the same password everywhere?",
+              "Give me tips for better password security",
+              "What makes a password strong?",
+              "Why is it important to have secure passwords?",
+              "Is using a common password a good idea?"
+            ],
+            "responses": [
+              "Create strong passwords with a mix of letters, numbers, and symbols.", 
+              "Password security is crucial to prevent unauthorized access to your accounts.", 
+              "Avoid using the same password for multiple accounts to minimize risks.",
+              "Certainly! Use a combination of uppercase, lowercase, special characters, and avoid easily guessable words.",
+              "Great question! Strong passwords have complexity and are hard to guess, enhancing your online security.",
+              "Absolutely! Secure passwords protect your sensitive data and reduce the chances of hacking.",
+              "No, using common passwords increases vulnerability. It's best to use unique passwords for each account."
+            ]
+          },
+          
+          {
+            "tag": "two_factor_auth",
+            "patterns": [
+              "What is two-factor authentication?", 
+              "How does 2FA work?", 
+              "Why is 2FA important?",
+              "Explain two-factor authentication",
+              "Give me details about 2FA",
+              "What's the purpose of two-factor authentication?",
+              "How can I enable two-factor authentication?"
+            ],
+            "responses": [
+              "Two-factor authentication adds an extra layer of security by requiring a second verification step.", 
+              "2FA works by combining something you know (password) with something you have (phone or token).", 
+              "2FA is important to prevent unauthorized access even if your password is compromised.",
+              "Certainly! Two-factor authentication (2FA) ensures you verify your identity using two methods for enhanced security.",
+              "Of course! When you log in, 2FA asks for both your password and another piece of information only you have.",
+              "Absolutely! 2FA offers protection in case your password is stolen, as attackers would still need the second factor to access your account.",
+              "Enabling 2FA typically involves linking your account to a device (like your phone) that generates a unique code for each login."
+            ]
+          },
+          
+          {
+            "tag": "public_wifi",
+            "patterns": [
+              "Is public Wi-Fi safe?", 
+              "Risks of using public Wi-Fi", 
+              "How to stay secure on public networks?",
+              "Tell me about public Wi-Fi security",
+              "What are the dangers of public Wi-Fi?",
+              "What precautions should I take on public networks?"
+            ],
+            "responses": [
+              "Public Wi-Fi can be risky as it's often less secure.", 
+              "Risks of public Wi-Fi include eavesdropping and data interception.", 
+              "Stay secure on public networks by using a VPN and avoiding sensitive transactions.",
+              "Certainly! Public Wi-Fi is usually less secure, making your data vulnerable to interception.",
+              "Absolutely! Hackers can easily intercept data on public Wi-Fi, potentially accessing your personal information.",
+              "Good question! Safeguard your data on public Wi-Fi by using a Virtual Private Network (VPN) and refraining from accessing sensitive accounts."
+            ]
+          },
+          {
+            "tag": "data_encryption",
+            "patterns": [
+              "What is data encryption?", 
+              "How does encryption protect data?", 
+              "Should I encrypt my data?",
+              "Tell me about encryption",
+              "Why is data encryption important?",
+              "Is data encryption necessary for personal use?"
+            ],
+            "responses": [
+              "Data encryption transforms data into a code to prevent unauthorized access.", 
+              "Encryption protects data by making it unreadable without the decryption key.", 
+              "Encrypting sensitive data adds an extra layer of security.",
+              "Certainly! Encryption is the process of converting data into a secure code to prevent unauthorized reading.",
+              "Absolutely! Encryption safeguards your data from being understood by anyone without the appropriate decryption key.",
+              "Definitely! Encrypting your data is important, especially for sensitive information like financial and personal details.",
+              "While not always required, encrypting personal data can greatly enhance your online privacy and security."
+            ]
+          },
+          
+          {
+            "tag": "social_engineering",
+            "patterns": [
+              "What is social engineering?", 
+              "Common social engineering tactics", 
+              "How to recognize social engineering?",
+              "Tell me about social engineering",
+              "Give me examples of social engineering",
+              "How can I protect myself from social engineering?"
+            ],
+            "responses": [
+              "Social engineering manipulates individuals to divulge confidential information.", 
+              "Common tactics include phishing, pretexting, and baiting.", 
+              "Recognize social engineering by being cautious of unsolicited requests for information.",
+              "Of course! Social engineering exploits psychological manipulation to trick individuals into revealing sensitive data.",
+              "Absolutely! Examples include someone posing as tech support or sending fake emails to deceive you into sharing information.",
+              "Certainly! Stay safe by verifying the identity of people asking for sensitive info and being skeptical of unexpected messages."
+            ]
+          },
+          
+          {
+            "tag": "software_updates",
+            "patterns": [
+              "Why are software updates important?", 
+              "How often should I update software?", 
+              "Should I update all software?",
+              "Tell me about the importance of software updates",
+              "What's the purpose of updating software?",
+              "Is it necessary to update software regularly?"
+            ],
+            "responses": [
+              "Software updates fix security vulnerabilities and improve functionality.", 
+              "Regularly update software to stay protected against new threats.", 
+              "Update all software, including operating systems, browsers, and applications.",
+              "Absolutely! Updates patch vulnerabilities that hackers could exploit and enhance your software's performance.",
+              "Certainly! Updating software ensures you have the latest security patches and features for a safer online experience.",
+              "Indeed! Regular updates protect you from new cyber threats and keep your software running smoothly."
+            ]
+          },
+          
+          {
+            "tag": "reporting_incidents",
+            "patterns": [
+              "How to report a cyber security incident?", 
+              "Where to report phishing?", 
+              "Reporting online threats",
+              "Tell me about reporting cyber incidents",
+              "What steps should I take to report a security breach?",
+              "Where can I report cyber attacks?"
+            ],
+            "responses": [
+              "Report cyber security incidents to your organization's IT department.", 
+              "Phishing incidents can be reported to your email provider and relevant authorities.", 
+              "If you encounter online threats, report them to the appropriate law enforcement agencies.",
+              "Certainly! If you experience a cyber security incident, inform your organization's IT team promptly.",
+              "Great question! If you suspect a breach, alert your IT department immediately to take necessary actions.",
+              "Absolutely! Notify your email provider and local law enforcement if you come across any malicious online activities."
+            ]
+          }
+          
+    ,{
+        "tag": "risk_response",
+        "patterns": [
+          "What should I do if I suspect a cyber attack?", 
+          "How to respond to a security breach?", 
+          "Dealing with a compromised account",
+          "Tell me about responding to cyber attacks",
+          "What steps should I take during a security breach?",
+          "What's the protocol for a compromised account?"
+        ],
+        "responses": [
+          "If you suspect a cyber attack, disconnect from the internet to prevent further damage.",
+          "In case of a security breach, notify your IT department immediately.",
+          "If your account is compromised, change passwords and enable two-factor authentication.",
+          "Sure! Suspecting an attack? Disconnect from the internet to halt potential harm.",
+          "Of course! For a security breach, report it immediately to your organization's IT team for swift action.",
+          "Absolutely! If your account is compromised, change passwords and enable additional security measures like two-factor authentication."
+        ]
+      }
+      
+    ,{
+        "tag": "reporting_incident",
+        "patterns": [
+          "How to report a cyber security incident?", 
+          "Where to report phishing?", 
+          "Reporting a data breach",
+          "Tell me about reporting security incidents",
+          "What's the procedure to report phishing?",
+          "How should I report a data breach?"
+        ],
+        "responses": [
+          "Report cyber security incidents to your IT department or cyber security team.",
+          "If you receive a phishing email, report it to your IT support or the appropriate authority.",
+          "If you experience a data breach, follow your organization's protocol for reporting.",
+          "Certainly! Notify your IT department or cyber security team if you encounter a security incident.",
+          "Of course! For phishing, inform your IT support or relevant authorities to take appropriate action.",
+          "Absolutely! In case of a data breach, adhere to your organization's procedures for reporting and handling the breach."
+        ]
+      },{
+        "tag": "safe_browsing",
+        "patterns": [
+          "How to browse safely?", 
+          "Tips for secure online browsing", 
+          "Using public Wi-Fi securely",
+          "Tell me about safe browsing practices",
+          "What can I do to browse securely?",
+          "How to protect myself while using public Wi-Fi?"
+        ],
+        "responses": [
+          "Browsing safely involves using secure websites (HTTPS), avoiding suspicious downloads, and keeping your software updated.",
+          "Secure online browsing tips: use strong passwords, enable two-factor authentication, and be cautious of sharing personal information.",
+          "When using public Wi-Fi, avoid accessing sensitive information, use a VPN, and turn off sharing settings.",
+          "Certainly! Safe browsing includes using encrypted websites, staying updated, and being cautious of downloads.",
+          "Of course! Secure online browsing involves strong security practices like two-factor authentication and avoiding unsecured networks.",
+          "Absolutely! Protect yourself on public Wi-Fi by avoiding sensitive transactions, using a VPN for encryption, and disabling sharing options."
+        ]
+      }
+            
+    ]
+  }
+  

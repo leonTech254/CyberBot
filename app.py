@@ -1,4 +1,5 @@
-from flask import Flask,render_template
+from flask import Flask,render_template,request
+from ML.mlScript import Model
 
 app=Flask(__name__)
 
@@ -15,6 +16,8 @@ def chat():
 
 @app.route("/bot/response/")
 def bot_response():
-    return "hello world"
+    userInput=request.args.get('msg')
+    return Model.respond(userInput)
+
 if __name__ == '__main__':
     app.run(debug=True)
