@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
 body
 {
     background-color: #000;
@@ -11,7 +14,7 @@ header nav {
 }
 .chat-container
 {
-    width: 50%;
+    width: 30rem;
     min-height: 20rem;
     background-color: #ccc;
     margin: auto;
@@ -80,4 +83,23 @@ border-radius: 8px   8px  8px 0px;
 color: #000;
 float: left;
 
+}
+.leonLog
+{
+    margin-bottom: 1.5rem;
+}
+.by
+{
+    color: #ccc;
+
+}
+.cpyname
+{
+    font-family: 'Rubik Iso', cursive;
+    color: cyan;
+    font-weight: bold;
+}
+.leonLog
+{
+    text-align: center;
 }
