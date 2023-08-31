@@ -42,27 +42,41 @@ header nav {
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
+    cursor: pointer;
 
+}
+.input-container button:active
+{
+    transform: scale(.95);
 }
 .bubble-container
 {
     padding: 10px;
-}
 
+}
+#appendChat
+{
+    display: flex;
+    flex-direction: column;
+}
 .chatBubble-user
 {
 background-color: blue;
 padding: 1px 10px;
-float: right;
 border-radius: 8px 8px 0px 8px;
 color: #fff;
+margin-right: auto;
+float: right;
+
+
 }
 
 .chatBubble-bot
 {
 background-color: #fff;
 padding: 1px 10px;
-float: left;
 border-radius: 8px   8px  8px 0px;
 color: #000;
+float: left;
+
 }

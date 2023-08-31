@@ -12,7 +12,7 @@
         <nav>CYBER BOT</nav>
     </header>
     <div class="chat-container">
-        <div class="bubble-container">
+        <div class="bubble-container" id="appendChat">
             <span class="chatBubble">
                 hello
             </span>
@@ -21,14 +21,36 @@
        
 
         <div class="input-container">
-            <input type="text">
-            <button id="">Send</button>
+            <input type="text" id="userInput">
+            <button id="send">Send</button>
         </div>
         
 
    
         
     </div>
+
+    <script>
+        $(document).ready(function(){
+        function getUserResquery()
+        {
+            // $.get("/chat/")
+            inputUser=$("#userInput").val();
+           let userInput= `<div><span class='chatBubble-user'>${inputUser}<br></span></div>`;
+         
+           $("#appendChat").append(userInput);
+
+           $.get("/bot/response/", { msg: inputUser }).done(function (data) {
+
+            let botResponse= `<div class='me'><span class='chatBubble-bot'>${data}<br></span></div>`;
+           $("#appendChat").append(botResponse);
+           })
+
+        }
+        document.getElementById("send").addEventListener("click", getUserResquery);
+    });
+
+    </script>
 
 
     
